@@ -1,0 +1,186 @@
+@charset "utf-8";
+
+body {
+  margin: 0;
+  background: #f4f9ff;
+
+}
+
+h1 {
+  margin: 0 ;
+  font-weight: normal;
+  font-size: 20px;
+  padding-top: 50px;
+}
+
+header img {
+  margin-top: 10px;
+}
+
+h2 {
+  margin: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+header {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+/*    section index */
+.container {
+  background: white;
+  max-width: 1000px;
+  height: 290px;
+  margin: 50px auto 0;
+  text-align: center;
+  
+}
+
+.index {
+  margin: 0 auto;
+  max-width: 600px;
+  height: 290px;
+  text-align: left;
+}
+
+.index h2 {
+  margin: 20px 0;
+  font-size: 20px;
+}
+
+p + p {
+  margin-top: 18px;
+}
+
+
+/*  section detail */
+
+.detail {
+  width: 600px;
+  margin: 50px auto 0;
+  /* border: 3px solid green; */
+}
+
+.detail h2 {
+  font-size: 20px;
+}
+
+.detail img {
+  width: 230px;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  /* border: 2px solid red; */
+}
+
+
+.container2 {
+  display: flex;
+  gap: 30px;
+  width: 600px;
+  margin-top: 10px;
+  /* border: 3px solid blue; */
+}
+
+
+.text {
+  width: 200px;
+  flex: 1;
+  /* border: 3px solid orange; */
+}
+
+dl {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 16px 0;
+}
+
+dl div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text p {
+  margin-top: 20px;
+}
+
+.text a {
+  display: block;
+  color: inherit;
+  margin-top: 30px;
+}
+
+
+/*  footer   */
+
+footer {
+  width: 500px;
+  margin: 100px auto 0;
+  font-size: 12px;
+}
+
+/*    breakpoint 1024px */
+
+@media (max-width: 1024px) {
+
+
+  header {
+    /* padding: 0 10px; */
+    /* border: 2px solid gold; */
+    margin: 0 auto;
+
+  }
+
+  header img {
+  width: calc(100% - 16px);
+  }
+
+  .all {
+    width: calc(100% - 32px );
+    /* border: 3px solid blue; */
+    margin: 0 auto;
+
+  }
+
+  .detail {
+    /* border: 3px solid green; */
+    width: calc(100% - 32px);
+
+  }
+
+  .container2 {
+    display: block;
+    /* border: 3px solid orange; */
+    width: calc(100% - 32px);
+    margin: 0 auto;
+  }
+
+  .text {
+    /* border: 2px solid purple; */
+    margin: 20px auto 0;
+    width: calc(100% - 32px);
+  }
+
+  dl div {
+    /* border: 3px solid pink; */
+    /* display: flex; */
+  }
+
+  .container2 img {
+    /* border: 2px solid red; */
+    display: block;
+    width: calc(100% - 32px);
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+  }
+}
